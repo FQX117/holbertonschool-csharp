@@ -1,9 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\0x04-csharp-exceptions",
-    "\\0x04-csharp-exceptions\\0-safe_list_print"
+    "\\0x05-csharp-structs_enums\\0-dog",
+    "\\0x05-csharp-structs_enums\\1-dog",
+    "\\0x05-csharp-structs_enums\\2-dog",
+    "\\0x05-csharp-structs_enums\\3-dog",
+    "\\0x06-csharp-classes",
+    "\\0x06-csharp-classes\\4-enemy",
+    "\\0x06-csharp-classes\\5-enemy"
   ],
-  "SelectedNode": "\\0x04-csharp-exceptions\\0-safe_list_print\\0-main.cs",
+  "SelectedNode": "\\0x06-csharp-classes\\5-enemy\\5-enemy.cs",
   "PreviewInSolutionExplorer": false
 }
