@@ -1,5 +1,0 @@
-C:\Users\black\Desktop\holbertonschool-csharp\0x07-csharp-tdd\0-add\MyMath\obj\Debug\net5.0\MyMath.csproj.AssemblyReference.cache
-C:\Users\black\Desktop\holbertonschool-csharp\0x07-csharp-tdd\0-add\MyMath\obj\Debug\net5.0\MyMath.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\black\Desktop\holbertonschool-csharp\0x07-csharp-tdd\0-add\MyMath\obj\Debug\net5.0\MyMath.AssemblyInfoInputs.cache
-C:\Users\black\Desktop\holbertonschool-csharp\0x07-csharp-tdd\0-add\MyMath\obj\Debug\net5.0\MyMath.AssemblyInfo.cs
-C:\Users\black\Desktop\holbertonschool-csharp\0x07-csharp-tdd\0-add\MyMath\obj\Debug\net5.0\MyMath.csproj.CoreCompileInputs.cache
