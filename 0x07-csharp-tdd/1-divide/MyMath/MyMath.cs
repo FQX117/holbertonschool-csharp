@@ -20,8 +20,8 @@ namespace MyMath
             catch
             {
                 if (num == 0)
-                    Console.WriteLine('Num cannot be 0');
-                return null;
+                    Console.WriteLine("Num cannot be 0");
+                    return null;
             }
             catch
             {
