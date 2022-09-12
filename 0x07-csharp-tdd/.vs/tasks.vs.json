@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-MyMath",
+      "appliesTo": "1-divide/MyMath/MyMath.cs",
+      "type": "launch"
+    }
+  ]
+}
