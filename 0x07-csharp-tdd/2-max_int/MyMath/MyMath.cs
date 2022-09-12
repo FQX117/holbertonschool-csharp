@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Collections.Generic;
 
 namespace MyMath
@@ -7,14 +6,12 @@ namespace MyMath
     public class Operations
     {
         public static int Max(List<int> nums)
-           try
+            if (nums == null || nums.Count == 0)
+            {
+            return 0;
+            else
             {
             Console.write(list.Max());
-            }
-            catch 
-            {
-            if nums == 0
-                return 0;
             }
     }
 }
