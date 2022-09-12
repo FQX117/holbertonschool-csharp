@@ -3,17 +3,23 @@ using System.Collections.Generic;
 
 namespace MyMath
 {
-    /// <summary>comment</summary>
-    public class Operations
-    {
-        /// <summary>comment</summary>
-        public static int Max(List<int> nums)
-            if (nums == null || nums.Count == 0)
-            {
-            return 0;
-            else
-            {
-            Console.write(list.Max());
-            }
-    }
+	///<summary>qwertyqwerty</summary>
+	public class Operations
+	{
+		///<summary>qwertyqwerty</summary>
+		public static int Max(List<int> nums)
+		{
+			if (nums == null || nums.Count == 0)
+			{
+				return 0;
+			}
+			int max = nums[0];
+
+			foreach (int i in nums)
+			{
+				max = i > max ? i : max;
+			}
+			return max;
+		}
+	}
 }
