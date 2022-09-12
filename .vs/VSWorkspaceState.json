@@ -5,10 +5,10 @@
     "\\0x05-csharp-structs_enums\\1-dog",
     "\\0x05-csharp-structs_enums\\2-dog",
     "\\0x05-csharp-structs_enums\\3-dog",
-    "\\0x06-csharp-classes",
-    "\\0x06-csharp-classes\\4-enemy",
-    "\\0x06-csharp-classes\\5-enemy"
+    "\\0x06-csharp-classes\\5-enemy",
+    "\\0x07-csharp-tdd",
+    "\\0x07-csharp-tdd\\0-add"
   ],
-  "SelectedNode": "\\0x06-csharp-classes\\5-enemy\\5-enemy.cs",
+  "SelectedNode": "\\0x07-csharp-tdd\\0-add\\0-add.sln",
   "PreviewInSolutionExplorer": false
 }

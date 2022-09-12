@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = MyMath
+build_property.ProjectDir = C:\Users\black\Desktop\holbertonschool-csharp\0x07-csharp-tdd\1-divide\MyMath\
