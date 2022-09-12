@@ -2,11 +2,15 @@ using NUnit.Framework;
 
 namespace MyMath.Tests
 {
-	[testc]
+	[TestFixture]
 	public class Tests
 	{
+		[SetUp]
+		public void Setup()
+		{
+		}
 
-		[testm]
+		[Test]
 		public void Test1()
 		{
 			int[,] matrix = new int[2, 2] { { 6, 2 }, { 2, 4 } };
@@ -16,7 +20,7 @@ namespace MyMath.Tests
 
 			Assert.AreEqual(new int[2, 2] { { 3, 1 }, { 1, 2 } }, output);
 		}
-		[testm]
+		[Test]
 		public void Test2()
 		{
 			int[,] matrix = null;
@@ -26,7 +30,7 @@ namespace MyMath.Tests
 
 			Assert.AreEqual(null, output);
 		}
-		[testm]
+		[Test]
 		public void Test3()
 		{
 			int[,] matrix = new int[2, 2] { { 6, 2 }, { 2, 4 } };
