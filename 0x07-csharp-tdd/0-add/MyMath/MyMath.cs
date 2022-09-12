@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 
-
-    namespace MyMath
+namespace MyMath
 {
-    class Operations
-        public static int Add(int a, int b)
+    ///<summary>qwertyqwerty</summary>
+    public class Operations
     {
-        int i = a + b
-            return i
+        ///<summary>qwertyqwerty</summary>
+		public static int Add(int a, int b)
+        {
+            return a + b;
+        }
     }
-
-}
 }

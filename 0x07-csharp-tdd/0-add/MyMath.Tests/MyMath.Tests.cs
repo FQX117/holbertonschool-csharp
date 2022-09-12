@@ -2,16 +2,22 @@ using NUnit.Framework;
 
 namespace MyMath.Tests
 {
-    [testc]
     public class Tests
     {
-        [testm]
-        public void addition()
+        [SetUp]
+        public void Setup()
         {
-            int a = 4;
-            int b = 5;
-            int sum = Operations.add(a, b);
-            Assert.AreEqual(a + b, sum);
+        }
+
+        [Test]
+        public void Test1()
+        {
+            int input_a = 5;
+            int input_b = 6;
+
+            int output = Operations.Add(input_a, input_b);
+
+            Assert.AreEqual(input_a + input_b, output);
         }
     }
 }
