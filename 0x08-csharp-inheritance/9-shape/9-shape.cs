@@ -69,7 +69,7 @@ class Square : Rectangle
     //size of square
     public int size
     {
-        get size
+        get
         {
             return size;
         }
