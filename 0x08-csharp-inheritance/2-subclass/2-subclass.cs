@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 
 ///<summary>Class for object testing</summary>
 class Obj
@@ -8,6 +7,6 @@ class Obj
 	///<returns>True or false</returns>
     public static bool IsOnlyASubclass(Type derivedType, Type baseType)
     {
-        return derivedType.IsSubclassof(baseType);
+        return derivedType.IsSubclassOf(baseType);
     }
 }
