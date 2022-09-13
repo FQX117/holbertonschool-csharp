@@ -1,0 +1,5 @@
+C:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\2-subclass\obj\Debug\netcoreapp2.1\2-subclass.csproj.AssemblyReference.cache
+C:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\2-subclass\obj\Debug\netcoreapp2.1\2-subclass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\2-subclass\obj\Debug\netcoreapp2.1\2-subclass.AssemblyInfoInputs.cache
+C:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\2-subclass\obj\Debug\netcoreapp2.1\2-subclass.AssemblyInfo.cs
+C:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\2-subclass\obj\Debug\netcoreapp2.1\2-subclass.csproj.CoreCompileInputs.cache

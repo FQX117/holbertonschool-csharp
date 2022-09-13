@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "1ipjTvqnGueAck+oUqKNb4ju4NLPsod7gxGCawgcHnLxnEnD80D3Rn91qqEtnOIsrgXuN8Sn19QRTFVVrKqS3g==",
+  "dgSpecHash": "B5Ar4tx2qV1pNhS0UzzCFHI3ggSjJGrzwmmDQStAfwFcCQopb8KIGoDjugtxt+4HDxH0ePh5GHutONk9fqVM1w==",
   "success": true,
   "projectFilePath": "C:\\Users\\black\\Desktop\\holbertonschool-csharp\\0x08-csharp-inheritance\\2-subclass\\2-subclass.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\black\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
+    "C:\\Users\\black\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
+    "C:\\Users\\black\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.1.0\\microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
+    "C:\\Users\\black\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
+    "C:\\Users\\black\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\black\\.nuget\\packages\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
+    "C:\\Users\\black\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
