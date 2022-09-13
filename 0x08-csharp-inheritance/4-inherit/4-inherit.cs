@@ -1,4 +1,4 @@
-using System
+using System;
 
 /// <summary>Base Class</summary>
 class Animal
