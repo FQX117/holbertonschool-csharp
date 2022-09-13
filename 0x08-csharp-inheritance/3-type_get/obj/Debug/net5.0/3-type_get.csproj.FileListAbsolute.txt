@@ -1,0 +1,5 @@
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\3-type_get\obj\Debug\net5.0\3-type_get.csproj.AssemblyReference.cache
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\3-type_get\obj\Debug\net5.0\3-type_get.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\3-type_get\obj\Debug\net5.0\3-type_get.AssemblyInfoInputs.cache
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\3-type_get\obj\Debug\net5.0\3-type_get.AssemblyInfo.cs
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\3-type_get\obj\Debug\net5.0\3-type_get.csproj.CoreCompileInputs.cache

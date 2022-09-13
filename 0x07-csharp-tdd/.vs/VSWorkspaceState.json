@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "\\0-add\\MyMath",
+    "\\0-add\\MyMath.Tests",
+    "\\1-divide\\MyMath",
+    "\\1-divide\\MyMath.Tests",
+    "\\2-max_int\\MyMath",
+    "\\2-max_int\\MyMath.Tests",
+    "\\3-palindrome\\Text.Tests",
+    "\\4-unique\\Text",
+    "\\5-camelcase\\Text.Tests"
+  ],
+  "PreviewInSolutionExplorer": false
+}

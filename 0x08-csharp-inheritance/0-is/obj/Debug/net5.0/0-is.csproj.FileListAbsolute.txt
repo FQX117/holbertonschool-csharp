@@ -1,0 +1,16 @@
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\0-is\obj\Debug\net5.0\0-is.csproj.AssemblyReference.cache
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\0-is\obj\Debug\net5.0\0-is.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\0-is\obj\Debug\net5.0\0-is.AssemblyInfoInputs.cache
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\0-is\obj\Debug\net5.0\0-is.AssemblyInfo.cs
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\0-is\obj\Debug\net5.0\0-is.csproj.CoreCompileInputs.cache
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\0-is\bin\Debug\net5.0\0-is.exe
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\0-is\bin\Debug\net5.0\0-is.deps.json
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\0-is\bin\Debug\net5.0\0-is.runtimeconfig.json
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\0-is\bin\Debug\net5.0\0-is.runtimeconfig.dev.json
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\0-is\bin\Debug\net5.0\0-is.dll
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\0-is\bin\Debug\net5.0\ref\0-is.dll
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\0-is\bin\Debug\net5.0\0-is.pdb
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\0-is\obj\Debug\net5.0\0-is.dll
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\0-is\obj\Debug\net5.0\ref\0-is.dll
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\0-is\obj\Debug\net5.0\0-is.pdb
+c:\Users\black\Desktop\holbertonschool-csharp\0x08-csharp-inheritance\0-is\obj\Debug\net5.0\0-is.genruntimeconfig.cache
