@@ -51,7 +51,7 @@ class Rectangle : Shape
     }
 
 /// <summary>rectangle</summary>
-public new int Area
+public new int Area()
 {
     return width * height;
 }
