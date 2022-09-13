@@ -25,11 +25,13 @@ class Rectangle : Shape
             return width;
         }
         set
+        {
         if (value < 0)
         {
             throw new ArgumentException("Width must be greater than or equal to 0");
         }
         width = value;
+        }
     }
     //Height of rectangle
     public int Height
@@ -39,10 +41,12 @@ class Rectangle : Shape
             return height;
         }
         set
+        {
         if (value < 0)
         {
             throw new ArgumentException("Height must be greater than or equal to 0");
         }
         height = value;
+        }
     }
 }
