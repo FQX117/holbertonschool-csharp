@@ -44,4 +44,12 @@ using System;
          }
          count++;
        }
+       /// <summary>
+       /// counts nodes
+       /// </summary>
+       /// <returns>count</returns>
+       public int Count()
+       {
+         return count;
+       }
     }
