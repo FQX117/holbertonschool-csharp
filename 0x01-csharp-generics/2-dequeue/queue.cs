@@ -33,10 +33,10 @@ using System;
        /// <param name="value"></param>
        public void Enqueue(T value)
        {
-         Node add@ = new Node();
+         Node add = new Node();
          if (head == null)
          {
-            head = add@;
+            head = add;
          }
          else
          {
@@ -45,7 +45,7 @@ using System;
             {
                tail = tail.next;
             }
-            tail.next = add@;
+            tail.next = add;
          }
          count++;
        }
@@ -57,7 +57,10 @@ using System;
        {
          return count;
        }
-
+       /// <summary>
+       /// removes nodes
+       /// </summary>
+       /// <param name="value"></param>
        public void Dequeue(T value)
        {
         if (head == null)
