@@ -40,7 +40,7 @@ using System;
          }
          else
          {
-            var tail = head;
+            public var tail = head;
             while (tail.next != null)
             {
                tail = tail.next;
