@@ -40,11 +40,6 @@ using System;
          }
          else
          {
-            public var tail = head;
-            while (tail.next != null)
-            {
-               tail = tail.next;
-            }
             tail.next = add;
          }
          count++;
