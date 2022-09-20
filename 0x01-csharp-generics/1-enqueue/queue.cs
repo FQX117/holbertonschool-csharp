@@ -27,17 +27,20 @@ using System;
        public Node head;
        public Node tail;
        public int count;
-       
+       /// <summary>
+       /// adds node to end
+       /// </summary>
+       /// <param name="value"></param>
        public void Enqueue(T value)
        {
-         Node add = new Node();
+         Node add = new Node(value);
          if (head == null)
          {
             head = add;
          }
          else
          {
-            var tail = head;
+            public var tail = head;
             while (tail.next != null)
             {
                tail = tail.next;
@@ -45,10 +48,5 @@ using System;
             tail.next = add;
          }
          count++;
-       }
-
-       public int Count()
-       {
-         return count;
        }
     }
