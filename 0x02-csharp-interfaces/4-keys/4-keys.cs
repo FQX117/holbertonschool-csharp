@@ -1,4 +1,3 @@
-using Internal;
 using System;
 
 abstract class Base
@@ -7,7 +6,7 @@ abstract class Base
     /// base class
     /// </summary>
     public string name = "";
-    public override ToString()
+    public override string ToString()
     {
     return String.Format("{0} is a {1}", name, this.GetType().Name);
     }
@@ -32,7 +31,7 @@ interface ICollectable
 /// <summary>
 /// door class
 /// </summary>
-class Door : IInteractive, Base
+class Door : Base, IInteractive
 {
     public void Interact()
     {
