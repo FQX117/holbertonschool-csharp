@@ -68,13 +68,13 @@ class Decoration : Base, IInteractive, IBreakable
         {
             throw new Exception("The {0} has been broken.", this.name);
         }
-      else if (isQuestItem)
+        if (isQuestItem)
         {
-            Console.WriteLine("You look at the {0}. There's a key inside.", this.name)
+            Console.WriteLine("You look at the {0}. There's a key inside.", this.name);
         }
         else
         {
-            Console.WriteLine("You look at the {0}. Not much to see here.", this.name)
+            Console.WriteLine("You look at the {0}. Not much to see here.", this.name);
         }
     }
     public void Break()
@@ -87,11 +87,11 @@ class Decoration : Base, IInteractive, IBreakable
 
         if (durability > 0)
         {
-            Console.WriteLine("You hit the {0}. It cracks.", this.name)
+            Console.WriteLine("You hit the {0}. It cracks.", this.name);
         }
         if (durability == 0)
         {
-            Console.WriteLine("You smash the {0}. What a mess.", this.name)
+            Console.WriteLine("You smash the {0}. What a mess.", this.name);
         }
     }
 }
