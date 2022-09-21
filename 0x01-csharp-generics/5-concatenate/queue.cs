@@ -1,124 +1,110 @@
 using System;
 
-   /// <summary>MAkes new class</summary>
-   /// <typeparam name="T"></typeparam>
-    class Queue<T> 
-    {
-      /// <summary>checks type</summary>
-      /// <returns>typeof</returns>
-      public Type CheckType()
-      {
-         return typeof(T);
-      }
-       
-       /// <summary>sets up node</summary>
-       public class Node
-       {
-        private T value = default(T);
-        private Node next = null;
+/// <summary>
+/// Generic class.
+/// </summary>
+/// <typeparam name="T">The type of object.</typeparam>
+class Queue<T>
+{
+	/// <summary>
+	/// Each node of the list.
+	/// </summary>
+	public class Node
+	{
+		public T value;
+		public Node next = null;
+		public Node(T type)
+		{
+			this.value = type;
+		}
+	}
+	public Node head;
+	public Node tail;
+	int count = 0;
 
-        public Node(T input)
-        {
-         value = input;
-        }
-       }
+	/// <summary>
+	/// Returns the number of nodes in a list.
+	/// </summary>
+	public int Count()
+	{
+		return this.count;
+	}
 
+	/// <summary>
+	/// Adds a node to the end of a list.
+	/// </summary>
+	/// <param name="t">The value of the node.</param>
+	public void Enqueue(T t)
+	{
+		Node node = new Node(t);
 
-       public Node head;
-       public Node tail;
-       public int count;
-       /// <summary>
-       /// adds node to end
-       /// </summary>
-       /// <param name="value"></param>
-       public void Enqueue(T value)
-       {
-         Node add@ = new Node();
-         if (head == null)
-         {
-            head = add@;
-         }
-         else
-         {
-            var tail = head;
-            while (tail.next != null)
-            {
-               tail = tail.next;
-            }
-            tail.next = add@;
-         }
-         count++;
-       }
-       /// <summary>
-       /// counts nodes
-       /// </summary>
-       /// <returns>count</returns>
-       public int Count()
-       {
-         return count;
-       }
-       /// <summary>
-       /// removes head
-       /// </summary>
-       /// <param name="value"></param>
-       public void Dequeue(T value)
-       {
-        if (head == null)
-        {
-            Console.Writeline("Queue is empty");
-            return default(T);
-        }
-        else 
-        {
-           T value = head.value;
-           Node.Remove(head);
-           return value;
-        }
-       }
-       /// <summary>
-       /// gives head value
-       /// </summary>
-       /// <param name="value"></param>
-       public void Peek(T value)
-       {
-        if (head == null)
-        {
-            Console.Writeline("Queue is empty");
-            return default(T);
-        }
-        else 
-        {
-           T value = head.value;
-           return value;
-        }
-       }
-       /// <summary>
-       /// prints queue
-       /// </summary>
-       /// <param name="value"></param>
-       public void Print(T value)
-       {
-        if (head == null)
-        {
-            Console.Writeline("Queue is empty");
-            return default(T);
-        }
-        else
-        {
-            T value = curent.value;
-            val curent = head;
-            while (curent.next != null)
-            {
-               Console.Writeline(curent.value);
-               curent = curent.next;
-            }
-        }
-       }
-       /// <summary>
-       /// finds strings and chars
-       /// </summary>
-       /// <returns></returns>
-       public string Concatenate()
+		if (this.head == null)
+			this.head = node;
+		if (this.tail != null)
+			this.tail.next = node;
+		this.tail = node;
+		this.count++;
+	}
+
+	/// <summary>
+	/// Checks type of object.
+	/// </summary>
+	/// <returns>Object type.</returns>
+	public Type CheckType()
+	{
+		return typeof(T);
+	}
+
+	/// <summary>
+	/// Removes the first node in the queue.
+	/// </summary>
+	/// <returns>Value of the first node.</returns>
+	public T Dequeue()
+	{
+		Node node;
+		if (this.head == null)
+		{
+			Console.WriteLine("Queue is empty");
+			return default(T);
+		}
+		node = this.head;
+		this.head = node.next;
+		count--;
+		return node.value;
+	}
+
+	/// <summary>
+	/// Returns the value of the first node without removing.
+	/// </summary>
+	/// <returns>Value of first node.</returns>
+	public T Peek()
+	{
+		if (this.head == null)
+		{
+			Console.WriteLine("Queue is empty");
+			return default(T);
+		}
+		return this.head.value;
+	}
+
+	/// <summary>
+	/// Prints the values of a list.
+	/// </summary>
+	public void Print()
+	{
+		Node node;
+		if (this.head == null)
+			Console.WriteLine("Queue is empty");
+		node = this.head;
+		while (node != null)
+		{
+			Console.WriteLine(node.value);
+			node = node.next;
+		}
+
+	}
+
+	public string Concatenate()
 	{
 		Node node;
 
@@ -143,4 +129,4 @@ using System;
 		}
 		return concat;
 	}
-    }
+}
