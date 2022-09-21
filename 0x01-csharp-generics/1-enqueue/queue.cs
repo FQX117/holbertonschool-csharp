@@ -33,7 +33,7 @@ using System;
        /// <param name="value"></param>
        public void Enqueue(T value)
        {
-         Node add = new Node(value);
+         public Node add = new Node(value);
          if (head == null)
          {
             head = add;
