@@ -52,25 +52,14 @@ class Queue<T>
 			return value;
 		}
 	}
-       /// <summary>
-       /// removes nodes
-       /// </summary>
-       /// <param name="value"></param>
-       public void Dequeue(T value)
-       {
-        if (head == null)
-        {
-            Console.write("Queue is empty");
-            return default(T);
-        }
-        else 
-        {
-           T value = head.value;
-           Node.Remove(head);
-           return value;
-        }
-       }
-   ///<summary>Check if its a queue type</summary>
+
+	///<summary>Add new node at the end</summary>
+	public int Count()
+	{
+		return count;
+	}
+
+	///<summary>Check if its a queue type</summary>
 	///<return>returns a Queue type</return>
 	public Type CheckType()
 	{
