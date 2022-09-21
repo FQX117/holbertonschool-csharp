@@ -32,7 +32,7 @@ interface ICollectable
 /// <summary>
 /// door class
 /// </summary>
-class Door : IInteractive, Base
+class Door : Base, IInteractive
 {
     public void Interact()
     {
