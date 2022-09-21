@@ -68,7 +68,7 @@ class Decoration : Base, IInteractive, IBreakable
         {
             throw new Exception("The {0} has been broken.", this.name);
         }
-        if (isQuestItem)
+      else if (isQuestItem)
         {
             Console.WriteLine("You look at the {0}. There's a key inside.", this.name)
         }
