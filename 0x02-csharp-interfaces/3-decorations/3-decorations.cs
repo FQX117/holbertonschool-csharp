@@ -65,7 +65,7 @@ class Decoration : Base, IInteractive, IBreakable
     {
         if (durability < 1)
         {
-            throw new Exception("The {0} has been broken.", this.name);
+            Console.WriteLine("The {0} has been broken.", this.name);
         }
         if (isQuestItem)
         {
@@ -81,7 +81,7 @@ class Decoration : Base, IInteractive, IBreakable
         this.durability--;
         if (durability < 0)
         {
-            throw new Exception("The {0} is already broken.", this.name);
+            Console.WriteLine("The {0} is already broken.", this.name);
         }
 
         if (durability > 0)
