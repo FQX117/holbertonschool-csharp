@@ -52,7 +52,7 @@ class Decoration : Base, IInteractive, IBreakable
     {
         if (durability < 1)
         {
-            throw new Exception("Durability must be greater than 0");
+            Console.WriteLine("Durability must be greater than 0");
         }
         this.name = name;
         this.durability = durability;
@@ -63,7 +63,7 @@ class Decoration : Base, IInteractive, IBreakable
     {
         if (durability < 1)
         {
-            throw new Exception("The {0} has been broken.", this.name);
+            Console.WriteLine("The {0} has been broken.", this.name);
         }
         else if (isQuestItem)
         {
