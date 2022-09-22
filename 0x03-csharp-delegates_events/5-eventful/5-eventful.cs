@@ -34,7 +34,7 @@ public class Player
         }
         public void PrintHealth()
         {
-            Console.WriteLine("{0} has {1} / {3} health", name, hp, health);
+            Console.WriteLine("{0} has {1} / {3} health", name, hp, maxHp);
         }
 
 
