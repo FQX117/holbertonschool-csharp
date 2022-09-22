@@ -79,7 +79,7 @@ class Decoration : Base, IInteractive, IBreakable
         this.durability--;
         if (durability < 0)
         {
-            throw new Exception("The {0} is already broken.", this.name);
+            Console.WriteLine("The {0} is already broken.", this.name);
         }
 
         if (durability > 0)
