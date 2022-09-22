@@ -5,10 +5,11 @@ abstract class Base
     /// <summary>
     /// base class
     /// </summary>
-    public string name = "";
+    public string name { get; set; }
+
     public override string ToString()
     {
-    return (this.name + " is a " + this.GetType().ToString());
+        return $"{name} is a {this.GetType()}";
     }
 }
 
@@ -47,10 +48,5 @@ class TestObject : Base, IInteractive, IBreakable, ICollectable
     public void Collect()
     {
 
-    }
-    public string name = "";
-    public override string ToString()
-    {
-    return (this.name + " is a " + this.GetType().ToString());
     }
 }
