@@ -92,18 +92,15 @@ public class Player
 
     public float ApplyModifier(float baseValue, Modifier modifier)
     {
-        if (modifier = Modifier.weak)
+        if (modifier == Modifier.Weak)
         {
             return baseValue / 2;
         }
-        if (modifier = Modifier.base)
+        if (modifier == Modifier.Strong)
         {
-            return baseValue;
+            return baseValue * 1.5f;
         }
-        else
-        {
-            return baseValue * 1.5;
-        }
+        return baseValue;
     }
 
     public event EventHandler<CurrentHPArgs> HPCheck;
