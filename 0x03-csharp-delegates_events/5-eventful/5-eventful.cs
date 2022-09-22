@@ -1,11 +1,27 @@
 using System;
 
 
- // holds values 
+/// <summary>
+/// add xml
+/// </summary>
 public enum Modifier
 {
-    Weak, Base, Strong
+    /// <summary>
+    /// player class
+    /// </summary>
+    Weak,
+    /// <summary>
+    /// player class
+    /// </summary>
+    Base,
+    /// <summary>
+    /// player class
+    /// </summary>
+    Strong
 }
+/// <summary>
+/// player class
+/// </summary>
 public delegate float CalculateModifier(float baseValue, Modifier modifier);
 
 /// <summary>
