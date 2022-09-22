@@ -18,8 +18,8 @@ public class Player
         private float maxHp;
         private float hp;
         private string status;
-        this.status = $"{name} is ready to go!";
-        this.HPCheck = this.CheckStatus;
+        private this.status = $"{name} is ready to go!";
+        private this.HPCheck = this.CheckStatus;
 
         public Player(string name = Player, float maxHp = 100f)
         {
