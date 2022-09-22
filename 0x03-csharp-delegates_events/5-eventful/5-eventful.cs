@@ -79,7 +79,9 @@ public class Player
         this.hp -= damage;
         ValidateHP(this.hp);
     }
-    //heal
+    /// <summary>
+    /// player class
+    /// </summary>
     public void HealDamage(float heal)
     {
         if (heal < 0f)
@@ -92,7 +94,9 @@ public class Player
         this.hp += heal;
         ValidateHP(this.hp);
     }
-    // sets new HP
+    /// <summary>
+    /// player class
+    /// </summary>
     public void ValidateHP(float newHp)
     {
         if (newHp < 0)
@@ -109,7 +113,9 @@ public class Player
         }
         OnCheckStatus(new CurrentHPArgs(this.hp));
     }
-
+    /// <summary>
+    /// player class
+    /// </summary>
     public float ApplyModifier(float baseValue, Modifier modifier)
     {
         if (modifier == Modifier.Weak)
@@ -122,9 +128,13 @@ public class Player
         }
         return baseValue;
     }
-
+    /// <summary>
+    /// player class
+    /// </summary>
     public event EventHandler<CurrentHPArgs> HPCheck;
-
+    /// <summary>
+    /// player class
+    /// </summary>
     private void CheckStatus(object sender, CurrentHPArgs e)
     {
         if (e.currentHp == maxHp)
