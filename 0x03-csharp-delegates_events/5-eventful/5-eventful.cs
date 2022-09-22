@@ -162,7 +162,9 @@ public class Player
             Console.WriteLine("Health is low");
         }
     }
-
+    /// <summary>
+    /// player class
+    /// </summary>
     public void OnCheckStatus(CurrentHPArgs e)
     {
         if (e.currentHp < maxHp / 4)
@@ -176,8 +178,13 @@ public class Player
 /// </summary>
 public class CurrentHPArgs : EventArgs
 {
+    /// <summary>
+    /// player class
+    /// </summary>
     public readonly float currentHp;
-
+    /// <summary>
+    /// player class
+    /// </summary>
      public CurrentHPArgs(float newHp)
     {
         this.currentHp = newHp;
