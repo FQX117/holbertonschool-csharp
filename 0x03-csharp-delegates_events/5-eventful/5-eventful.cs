@@ -35,6 +35,9 @@ public class Player
         private string status;
         
 
+        /// <summary>
+        /// player class
+        /// </summary>
         public Player(string name = "Player", float maxHp = 100f)
         {
             if (maxHp < 1)
@@ -48,14 +51,22 @@ public class Player
                 this.name = name;
             }
         }
+        /// <summary>
+        /// player class
+        /// </summary>
         public void PrintHealth()
         {
             Console.WriteLine("{0} has {1} / {3} health", name, hp, maxHp);
         }
 
 
+    /// <summary>
+    /// player class
+    /// </summary>
     public delegate int CalculateHealth(float damage);
-    //Dmg
+    /// <summary>
+    /// player class
+    /// </summary>
     public void TakeDamage(float damage)
      {
         if (damage < 0f)
