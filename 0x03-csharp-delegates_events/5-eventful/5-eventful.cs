@@ -96,7 +96,7 @@ public class Player
         {
             return baseValue / 2;
         }
-        else if (modifier = Modifier.base)
+        if (modifier = Modifier.base)
         {
             return baseValue;
         }
