@@ -40,23 +40,24 @@ public class Player
         /// </summary>
         public Player(string name = "Player", float maxHp = 100f)
         {
-            if (maxHp < 1)
-            {
-                maxHp = 100f;
-                Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
-                this.status = $"{name} is ready to go!";
-                this.HPCheck = this.CheckStatus;
-                this.maxHp = maxHp;
-                this.hp = maxHp;
-                this.name = name;
-            }
+            if (maxHp <= 0f)
+        {
+            this.maxHp = 100f;
+            Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
+        }
+        else
+            this.maxHp = maxHp;
+        this.name = name;
+        this.hp = this.maxHp;
+        this.status = $"{this.name} is ready to go!";
+        HPCheck += CheckStatus;
         }
         /// <summary>
         /// player class
         /// </summary>
         public void PrintHealth()
         {
-            Console.WriteLine("{0} has {1} / {3} health", name, hp, maxHp);
+            Console.WriteLine("{0} has {1} / {2} health", name, hp, maxHp);
         }
 
 
