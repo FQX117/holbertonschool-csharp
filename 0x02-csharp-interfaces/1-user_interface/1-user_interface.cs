@@ -48,4 +48,9 @@ class TestObject : Base, IInteractive, IBreakable, ICollectable
     {
 
     }
+    public string name = "";
+    public override string ToString()
+    {
+    return (this.name + " is a " + this.GetType().ToString());
+    }
 }
