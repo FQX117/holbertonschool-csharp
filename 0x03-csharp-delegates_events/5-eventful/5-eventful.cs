@@ -41,35 +41,29 @@ public class Player
     public delegate int CalculateHealth(float damage);
     //Dmg
     public void TakeDamage(float damage)
-    {
-        float HPchange;
-        if (damage < 0)
+     {
+        if (damage < 0f)
         {
-            Console.WriteLine("{0} takes 0 damage!", name);
-         }
+            System.Console.WriteLine("{0} takes 0 damage!", this.name);
+            damage = 0f;
+        }
         else
-        {
-            HPchange = hp - damage;
-            Console.WriteLine("{0} takes {1} damage!", name, damage);
-       }
-        ValidateHP(HPchange);
-
+            System.Console.WriteLine("{0} takes {1} damage!", this.name, damage);
+        this.hp -= damage;
+        ValidateHP(this.hp);
     }
     //heal
     public void HealDamage(float heal)
     {
-        float HPchange;
-        if (heal < 0)
+        if (heal < 0f)
         {
-            Console.WriteLine("{0} heals 0 HP!", name);
+            System.Console.WriteLine("{0} heals 0 HP!", this.name);
+            heal = 0f;
         }
         else
-        {
-            HPchange = hp + heal;
-            Console.WriteLine("{0} heals {1} HP!", name, heal);
-
- }
-        ValidateHP(HPchange);
+            Console.WriteLine("{0} heals {1} HP!", this.name, heal);
+        this.hp += heal;
+        ValidateHP(this.hp);
     }
     // sets new HP
     public void ValidateHP(float newHp)
