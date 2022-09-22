@@ -52,7 +52,7 @@ public class Player
             HPchange = hp - damage;
             Console.WriteLine("{0} takes {1} damage!", name, damage);
        }
-        ValidateHP(HPchange);
+        ValidateHP(newHp);
 
     }
     //heal
@@ -74,7 +74,7 @@ public class Player
     // sets new HP
     public void ValidateHP(float newHp)
     {
-        if (newHP < 0)
+        if (newHp < 0)
         {
             hp = 0;
         }
