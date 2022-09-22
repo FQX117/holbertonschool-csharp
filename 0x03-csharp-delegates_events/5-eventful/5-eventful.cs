@@ -1,3 +1,4 @@
+using Internal;
 using System;
 
 
@@ -7,7 +8,6 @@ public enum Modifier
     Weak, Base, Strong
 }
 public delegate float CalculateModifier(float baseValue, Modifier modifier);
-
 
 /// <summary>
 /// player class
