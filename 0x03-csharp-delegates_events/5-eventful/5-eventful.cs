@@ -24,7 +24,7 @@ public class Player
             if (maxHp < 1)
             {
                 maxHp = 100f;
-                Console.Writeline("maxHp must be greater than 0. maxHp set to 100f by default.");
+                Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
                 this.status = $"{name} is ready to go!";
                 this.HPCheck = this.CheckStatus;
                 this.maxHp = maxHp;
@@ -34,7 +34,7 @@ public class Player
         }
         public void PrintHealth()
         {
-            Console.Writeline("{0} has {1} / {3} health", name, hp, health);
+            Console.WriteLine("{0} has {1} / {3} health", name, hp, health);
         }
 
 
@@ -45,12 +45,12 @@ public class Player
         float HPchange;
         if (damage < 0)
         {
-            Console.Writeline("{0} takes 0 damage!", name);
+            Console.WriteLine("{0} takes 0 damage!", name);
          }
         else
         {
             HPchange = hp - damage;
-            Console.Writeline("{0} takes {1} damage!", name, damage);
+            Console.WriteLine("{0} takes {1} damage!", name, damage);
        }
         ValidateHP(HPchange);
 
@@ -61,12 +61,12 @@ public class Player
         float HPchange;
         if (heal < 0)
         {
-            Console.Writeline("{0} heals 0 HP!", name);
+            Console.WriteLine("{0} heals 0 HP!", name);
         }
         else
         {
             HPchange = hp + heal;
-            Console.Writeline("{0} heals {1} HP!", name, heal);
+            Console.WriteLine("{0} heals {1} HP!", name, heal);
 
  }
         ValidateHP(HPchange);
