@@ -18,8 +18,7 @@ public class Player
         private float maxHp;
         private float hp;
         private string status;
-        private this.status = $"{name} is ready to go!";
-        private this.HPCheck = this.CheckStatus;
+        
 
         public Player(string name = Player, float maxHp = 100f)
         {
@@ -27,6 +26,8 @@ public class Player
             {
                 maxHp = 100f;
                 Console.Writeline("maxHp must be greater than 0. maxHp set to 100f by default.");
+                this.status = $"{name} is ready to go!";
+                this.HPCheck = this.CheckStatus;
                 this.maxHp = maxHp;
                 this.hp = maxHp;
                 this.name = name;
