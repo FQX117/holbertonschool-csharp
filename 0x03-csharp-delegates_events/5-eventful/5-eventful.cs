@@ -44,11 +44,11 @@ public class Player
      {
         if (damage < 0f)
         {
-            System.Console.WriteLine("{0} takes 0 damage!", this.name);
+            Console.WriteLine("{0} takes 0 damage!", this.name);
             damage = 0f;
         }
         else
-            System.Console.WriteLine("{0} takes {1} damage!", this.name, damage);
+            Console.WriteLine("{0} takes {1} damage!", this.name, damage);
         this.hp -= damage;
         ValidateHP(this.hp);
     }
@@ -57,7 +57,7 @@ public class Player
     {
         if (heal < 0f)
         {
-            System.Console.WriteLine("{0} heals 0 HP!", this.name);
+            Console.WriteLine("{0} heals 0 HP!", this.name);
             heal = 0f;
         }
         else
@@ -101,15 +101,15 @@ public class Player
     private void CheckStatus(object sender, CurrentHPArgs e)
     {
         if (e.currentHp == maxHp)
-            System.Console.WriteLine($"{name} is in perfect health!");
+            Console.WriteLine($"{name} is in perfect health!");
         else if (e.currentHp >= maxHp / 2 && e.currentHp < maxHp)
-            System.Console.WriteLine($"{name} is doing well!");
+            Console.WriteLine($"{name} is doing well!");
         else if (e.currentHp >= maxHp / 4 && e.currentHp < maxHp / 2)
-            System.Console.WriteLine($"{name} isn't doing too great...");
+            Console.WriteLine($"{name} isn't doing too great...");
         else if (e.currentHp > 0 && e.currentHp < maxHp / 4)
-            System.Console.WriteLine($"{name} needs help!");
+            Console.WriteLine($"{name} needs help!");
         else if (e.currentHp == 0)
-            System.Console.WriteLine($"{name} is knocked out!");
+            Console.WriteLine($"{name} is knocked out!");
     }
 
     private void HPValueWarning(object sender, CurrentHPArgs e)
@@ -117,12 +117,12 @@ public class Player
         if (true)
         {
             Console.BackgroundColor = ConsoleColor.DarkRed;
-            System.Console.WriteLine("Health has reached zero!");
+            Console.WriteLine("Health has reached zero!");
             Console.ResetColor();
         }
         else
         {
-            System.Console.WriteLine("Health is low");
+            Console.WriteLine("Health is low");
         }
     }
 
