@@ -50,7 +50,7 @@ public class Player
         this.name = name;
         this.hp = this.maxHp;
         this.status = $"{this.name} is ready to go!";
-        //HPCheck += CheckStatus;
+        HPCheck += CheckStatus;
         }
         /// <summary>
         /// player class
@@ -112,7 +112,7 @@ public class Player
         {
             hp = newHp;
         }
-        //OnCheckStatus(new CurrentHPArgs(this.hp));
+        OnCheckStatus(new CurrentHPArgs(this.hp));
     }
     /// <summary>
     /// player class
@@ -129,43 +129,49 @@ public class Player
         }
         return baseValue;
     }
-    
-    //public event EventHandler<CurrentHPArgs> HPCheck;
-    
-    //private void CheckStatus(object sender, CurrentHPArgs e)
-    //{
-      //  if (e.currentHp == maxHp)
-            //Console.WriteLine($"{name} is in perfect health!");
-      //  else if (e.currentHp >= maxHp / 2 && e.currentHp < maxHp)
-           // Console.WriteLine($"{name} is doing well!");
-        //else if (e.currentHp >= maxHp / 4 && e.currentHp < maxHp / 2)
-            //Console.WriteLine($"{name} isn't doing too great...");
-        //else if (e.currentHp > 0 && e.currentHp < maxHp / 4)
-            //Console.WriteLine($"{name} needs help!");
-        //else if (e.currentHp == 0)
-            //Console.WriteLine($"{name} is knocked out!");
-    //}
+    /// <summary>
+    /// player class
+    /// </summary>
+    public event EventHandler<CurrentHPArgs> HPCheck;
+    /// <summary>
+    /// player class
+    /// </summary>
+    private void CheckStatus(object sender, CurrentHPArgs e)
+    {
+        if (e.currentHp == maxHp)
+            Console.WriteLine($"{name} is in perfect health!");
+        else if (e.currentHp >= maxHp / 2 && e.currentHp < maxHp)
+            Console.WriteLine($"{name} is doing well!");
+        else if (e.currentHp >= maxHp / 4 && e.currentHp < maxHp / 2)
+            Console.WriteLine($"{name} isn't doing too great...");
+        else if (e.currentHp > 0 && e.currentHp < maxHp / 4)
+            Console.WriteLine($"{name} needs help!");
+        else if (e.currentHp == 0)
+            Console.WriteLine($"{name} is knocked out!");
+    }
 
-   // private void HPValueWarning(object sender, CurrentHPArgs e)
-    //{
-       // if (e.currentHp == 0)
-       // {
-      //      Console.BackgroundColor = ConsoleColor.DarkRed;
-      //      Console.WriteLine("Health has reached zero!");
-     //       Console.ResetColor();
-     //   }
-     //   else
-     //   {
-     //       Console.WriteLine("Health is low");
-     //   }
-  //  }
-    
-    //public void OnCheckStatus(CurrentHPArgs e)
-    //{
-      //  if (e.currentHp < maxHp / 4)
-      //      HPCheck += HPValueWarning;
-      //  HPCheck(this, e);
-   // }
+    private void HPValueWarning(object sender, CurrentHPArgs e)
+    {
+        if (e.currentHp == 0)
+        {
+            Console.BackgroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine("Health has reached zero!");
+            Console.ResetColor();
+        }
+        else
+        {
+            Console.WriteLine("Health is low");
+        }
+    }
+    /// <summary>
+    /// player class
+    /// </summary>
+    public void OnCheckStatus(CurrentHPArgs e)
+    {
+        if (e.currentHp < maxHp / 4)
+            HPCheck += HPValueWarning;
+        HPCheck(this, e);
+    }
 
 }
 /// <summary>
