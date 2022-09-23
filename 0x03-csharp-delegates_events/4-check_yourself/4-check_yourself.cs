@@ -112,7 +112,7 @@ public class Player
         {
             hp = newHp;
         }
-        OnCheckStatus(new CurrentHPArgs(this.hp));
+        HPCheck(this, new CurrentHPArgs(hp));
     }
     /// <summary>
     /// player class
@@ -148,29 +148,6 @@ public class Player
             Console.WriteLine($"{name} needs help!");
         else if (e.currentHp == 0)
             Console.WriteLine($"{name} is knocked out!");
-    }
-
-    private void HPValueWarning(object sender, CurrentHPArgs e)
-    {
-        if (e.currentHp == 0)
-        {
-            Console.BackgroundColor = ConsoleColor.DarkRed;
-            Console.WriteLine("Health has reached zero!");
-            Console.ResetColor();
-        }
-        else
-        {
-            Console.WriteLine("Health is low");
-        }
-    }
-    /// <summary>
-    /// player class
-    /// </summary>
-    public void OnCheckStatus(CurrentHPArgs e)
-    {
-        if (e.currentHp < maxHp / 4)
-            HPCheck += HPValueWarning;
-        HPCheck(this, e);
     }
 
 }
