@@ -150,19 +150,19 @@ public class Player
             //Console.WriteLine($"{name} is knocked out!");
     //}
 
-    private void HPValueWarning(object sender, CurrentHPArgs e)
-    {
-        if (e.currentHp == 0)
-        {
-            Console.BackgroundColor = ConsoleColor.DarkRed;
-            Console.WriteLine("Health has reached zero!");
-            Console.ResetColor();
-        }
-        else
-        {
-            Console.WriteLine("Health is low");
-        }
-    }
+   // private void HPValueWarning(object sender, CurrentHPArgs e)
+    //{
+       // if (e.currentHp == 0)
+       // {
+      //      Console.BackgroundColor = ConsoleColor.DarkRed;
+      //      Console.WriteLine("Health has reached zero!");
+     //       Console.ResetColor();
+     //   }
+     //   else
+     //   {
+     //       Console.WriteLine("Health is low");
+     //   }
+  //  }
     /// <summary>
     /// player class
     /// </summary>
