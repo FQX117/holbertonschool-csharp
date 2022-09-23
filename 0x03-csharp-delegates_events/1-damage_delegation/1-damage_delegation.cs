@@ -112,7 +112,7 @@ public class Player
         {
             hp = newHp;
         }
-        OnCheckStatus(new CurrentHPArgs(this.hp));
+        //OnCheckStatus(new CurrentHPArgs(this.hp));
     }
     /// <summary>
     /// player class
@@ -132,7 +132,7 @@ public class Player
     /// <summary>
     /// player class
     /// </summary>
-    public event EventHandler<CurrentHPArgs> HPCheck;
+    //public event EventHandler<CurrentHPArgs> HPCheck;
     /// <summary>
     /// player class
     /// </summary>
