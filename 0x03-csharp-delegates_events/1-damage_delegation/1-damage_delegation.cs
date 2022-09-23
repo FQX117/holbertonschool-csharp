@@ -166,12 +166,12 @@ public class Player
     /// <summary>
     /// player class
     /// </summary>
-    public void OnCheckStatus(CurrentHPArgs e)
-    {
-        if (e.currentHp < maxHp / 4)
-            HPCheck += HPValueWarning;
-        HPCheck(this, e);
-    }
+    //public void OnCheckStatus(CurrentHPArgs e)
+    //{
+      //  if (e.currentHp < maxHp / 4)
+      //      HPCheck += HPValueWarning;
+      //  HPCheck(this, e);
+   // }
 
 }
 /// <summary>
