@@ -50,7 +50,7 @@ public class Player
         this.name = name;
         this.hp = this.maxHp;
         this.status = $"{this.name} is ready to go!";
-        HPCheck += CheckStatus;
+        //HPCheck += CheckStatus;
         }
         /// <summary>
         /// player class
