@@ -136,19 +136,19 @@ public class Player
     /// <summary>
     /// player class
     /// </summary>
-    private void CheckStatus(object sender, CurrentHPArgs e)
-    {
-        if (e.currentHp == maxHp)
-            Console.WriteLine($"{name} is in perfect health!");
-        else if (e.currentHp >= maxHp / 2 && e.currentHp < maxHp)
-            Console.WriteLine($"{name} is doing well!");
-        else if (e.currentHp >= maxHp / 4 && e.currentHp < maxHp / 2)
-            Console.WriteLine($"{name} isn't doing too great...");
-        else if (e.currentHp > 0 && e.currentHp < maxHp / 4)
-            Console.WriteLine($"{name} needs help!");
-        else if (e.currentHp == 0)
-            Console.WriteLine($"{name} is knocked out!");
-    }
+    //private void CheckStatus(object sender, CurrentHPArgs e)
+    //{
+      //  if (e.currentHp == maxHp)
+            //Console.WriteLine($"{name} is in perfect health!");
+      //  else if (e.currentHp >= maxHp / 2 && e.currentHp < maxHp)
+           // Console.WriteLine($"{name} is doing well!");
+        //else if (e.currentHp >= maxHp / 4 && e.currentHp < maxHp / 2)
+            //Console.WriteLine($"{name} isn't doing too great...");
+        //else if (e.currentHp > 0 && e.currentHp < maxHp / 4)
+            //Console.WriteLine($"{name} needs help!");
+        //else if (e.currentHp == 0)
+            //Console.WriteLine($"{name} is knocked out!");
+    //}
 
     private void HPValueWarning(object sender, CurrentHPArgs e)
     {
